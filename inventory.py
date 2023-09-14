@@ -6,7 +6,7 @@ inventory_file = "computer_inventory.csv"
 if not os.path.exists(inventory_file):
     # Create a new empty inventory file with columns.
     df = pd.DataFrame(
-        columns=["Computer Name", "Serial Number", "CPU", "RAM", "Storage"]
+        columns=["Computer Name", "Serial Number", "CPU", "RAM", "Storage", "Os"]
     )
     df.to_csv(inventory_file, index=False)
 
